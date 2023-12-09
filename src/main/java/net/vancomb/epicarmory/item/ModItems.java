@@ -1,9 +1,6 @@
 package net.vancomb.epicarmory.item;
 
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -25,10 +22,14 @@ public class ModItems {
             () -> new SwordItem(Tiers.NETHERITE, 11, -2.85f,
                     new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
+    public static final RegistryObject<Item> SENTO = ITEMS.register("sento",
+            () -> new SentoItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC).rarity(Rarity.RARE)));
+
+    public static final RegistryObject<Item> SENTO_SHEATH = ITEMS.register("sento_sheath",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
+
     public static void register (IEventBus eventBus) {
         ITEMS.register(eventBus);
 
     }
-
-
 }
