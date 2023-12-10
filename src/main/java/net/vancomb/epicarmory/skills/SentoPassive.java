@@ -1,7 +1,6 @@
 package net.vancomb.epicarmory.skills;
 
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.entity.player.Player;
 import reascer.wom.gameasset.WOMAnimations;
 import reascer.wom.gameasset.WOMSkills;
 import reascer.wom.skill.passive.MeditationSkill;

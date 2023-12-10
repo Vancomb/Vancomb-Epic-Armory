@@ -1,15 +1,11 @@
 package net.vancomb.epicarmory.skills;
 
-import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.vancomb.epicarmory.EpicArmory;
-import reascer.wom.skill.weaponinnate.SakuraStateSkill;
 import yesman.epicfight.api.data.reloader.SkillManager;
 import yesman.epicfight.api.forgeevent.SkillBuildEvent;
 import yesman.epicfight.skill.Skill;
 import yesman.epicfight.skill.SkillCategories;
-import yesman.epicfight.skill.SkillSlots;
-import yesman.epicfight.skill.weaponinnate.ConditionalWeaponInnateSkill;
 
 public class ModSkills {
     public static Skill SENTO_PASSIVE;
