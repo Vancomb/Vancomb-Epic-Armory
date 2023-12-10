@@ -32,6 +32,7 @@ public class RenderSento extends RenderItemBase {
 
         modelMatrix = new OpenMatrix4f(this.mainhandcorrectionMatrix);
         modelMatrix.mulFront(poses[armature.toolL.getId()]);
+        modelMatrix.translate(0.025F, -0.08F, 0.03F);
 
         poseStack.pushPose();
         this.mulPoseStack(poseStack, modelMatrix);

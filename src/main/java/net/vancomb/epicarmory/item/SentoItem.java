@@ -31,10 +31,10 @@ public class SentoItem extends WeaponItem {
 
     public SentoItem(Item.Properties build) {
         super(EpicFightItemTier.UCHIGATANA, 0, -1.8F, build.defaultDurability(1666));
-        this.attackDamage = 7.0F;
-        this.attackSpeed = 2.2F;
+        this.attackDamage = 6.0F;
+        this.attackSpeed = -1.8F;
         if (EpicFightMod.isPhysicalClient()) {
-            this.tooltipExpand = new ArrayList<Component>();
+            this.tooltipExpand = new ArrayList<>();
             this.tooltipExpand.add(Component.m_237113_(""));
             this.tooltipExpand.add(Component.m_237115_("item." + EpicArmory.MOD_ID + ".sento.tooltip"));
         }

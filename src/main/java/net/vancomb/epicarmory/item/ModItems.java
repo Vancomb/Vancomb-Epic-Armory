@@ -16,14 +16,14 @@ public class ModItems {
 
     public static final RegistryObject<SwordItem> STAFF = ITEMS.register("staff",
             () -> new SwordItem(Tiers.NETHERITE, 11, -2.85f,
-                    new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+                    new Item.Properties().tab(ModTabs.EPIC_ARMORY)));
 
     public static final RegistryObject<SwordItem> HOOKSWORD = ITEMS.register("hooksword",
             () -> new SwordItem(Tiers.NETHERITE, 11, -2.85f,
-                    new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+                    new Item.Properties().tab(ModTabs.EPIC_ARMORY)));
 
     public static final RegistryObject<Item> SENTO = ITEMS.register("sento",
-            () -> new SentoItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC).rarity(Rarity.RARE)));
+            () -> new SentoItem(new Item.Properties().tab(ModTabs.EPIC_ARMORY).rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> SENTO_SHEATH = ITEMS.register("sento_sheath",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
