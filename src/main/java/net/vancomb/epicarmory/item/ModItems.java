@@ -12,7 +12,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, EpicArmory.MOD_ID);
 
-                                        //MODELS
+                                            //MODELS
 
     public static final RegistryObject<SwordItem> STAFF = ITEMS.register("staff",
             () -> new SwordItem(Tiers.NETHERITE, 11, -2.85f,
@@ -33,3 +33,12 @@ public class ModItems {
 
     }
 }
+
+ /*
+
+
+                    //Cant figure out what the heck is going on here - I followed the EFM may for registering an item
+    public static final RegistryObject<Item> HOOKSWORD = ITEMS.register("hooksword",
+            () -> new HookswordItem(new Item.Properties().tab(ModTabs.EPIC_ARMORY).rarity(Rarity.RARE)));
+
+  */
