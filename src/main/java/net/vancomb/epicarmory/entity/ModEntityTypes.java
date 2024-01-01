@@ -13,6 +13,7 @@ public class ModEntityTypes {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, EpicArmory.MOD_ID);
 
+    //And obviously you need to register your mob here but make sure you register it with you new mob class and not the abstract class
     public static final RegistryObject<EntityType<MaskedGuard>> MASKEDGUARD =
             ENTITY_TYPES.register("maskedguard",
                     () -> EntityType.Builder.of(MaskedGuard::new, MobCategory.MONSTER)

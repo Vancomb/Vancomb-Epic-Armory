@@ -28,7 +28,8 @@ public class EARenderEngine {
         event.registerLayerDefinition(EAModelLayers.KOMBATANT_ENTITY, AbstractKombatantEntityModel::createBodyLayer);
     }
 
-    //Tried to register the renderer
+    //To register a new mobs renderer just copy "event.registerEntityRenderer(ModEntityTypes.RANDOM_MOB.get(), AbstractKombatantEntityRenderer::new);"
+    //and replace RANDOM_MOB with your mob
     @SubscribeEvent
     public static void register(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ModEntityTypes.MASKEDGUARD.get(), AbstractKombatantEntityRenderer::new);
