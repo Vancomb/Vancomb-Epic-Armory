@@ -1,4 +1,4 @@
-package net.vancomb.epicarmory.event.render;
+package net.vancomb.epicarmory.client.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;

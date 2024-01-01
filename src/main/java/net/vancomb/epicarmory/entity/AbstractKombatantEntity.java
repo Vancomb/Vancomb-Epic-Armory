@@ -6,12 +6,13 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.Level;
+import net.vancomb.epicarmory.EpicArmory;
 
 /* There will be a variety of mobs that will all for the most part behave the same
 but will have different skins, use different weapons, have different attributes, spawns etc. */
 
-public class AbstractKombatantEntity extends Monster {
-    protected AbstractKombatantEntity(EntityType<? extends Monster> p_33002_, Level p_33003_) {
+public abstract class AbstractKombatantEntity extends Monster {
+    public AbstractKombatantEntity(EntityType<? extends Monster> p_33002_, Level p_33003_) {
         super(p_33002_, p_33003_);
     }
 
@@ -21,5 +22,9 @@ public class AbstractKombatantEntity extends Monster {
                 .add(Attributes.ATTACK_DAMAGE, 3.0f)
                 .add(Attributes.ATTACK_SPEED, 1.0f)
                 .add(Attributes.MOVEMENT_SPEED, 0.2f).build();
+    }
+
+    public ResourceLocation getResourceLoaction() {
+        return new ResourceLocation(EpicArmory.MOD_ID, "textures/entities/whatever_your_texture_is.png");
     }
 }

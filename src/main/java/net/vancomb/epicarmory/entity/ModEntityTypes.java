@@ -19,7 +19,7 @@ public class ModEntityTypes {
                             .sized(0.4f, 1.5f)
                             .build(new ResourceLocation(EpicArmory.MOD_ID, "maskedguard").toString()));
 
-    public static void register(IEventBus modEventBus) { ENTITY_TYPES.register(modEventBus);
-
+    public static void register(IEventBus modEventBus) {
+        ENTITY_TYPES.register(modEventBus);
     }
 }
