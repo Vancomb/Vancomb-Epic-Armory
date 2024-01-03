@@ -18,6 +18,10 @@ public class AbstractKombatantEntityRenderer extends HumanoidMobRenderer<Abstrac
         return entity.getResourceLoaction();
     }
 
+}
+
+
+
     /*public AbstractKombatantEntityRenderer(EntityRendererProvider.Context p_174169_, PlayerModel<AbstractKombatantEntity> p_174170_, float p_174171_) {
         super(p_174169_, p_174170_, p_174171_);
 
@@ -28,4 +32,3 @@ public class AbstractKombatantEntityRenderer extends HumanoidMobRenderer<Abstrac
     public ResourceLocation getTextureLocation(AbstractKombatantEntity entity) {
         return entity.getResourceLoaction();
     }*/
-}

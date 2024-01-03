@@ -5,5 +5,8 @@
   "item.epicarmory.sento_sheath": "Sento Sheath",
   "item.epicarmory.sento.tooltip": "An ancient relic belonging to the Takahashi clan, a powerful tribe of warriors that have mysteriously ceased to exist. \nIt is believed that the souls of past wielders are imbued in this sword",
   "itemGroup.epic_armory": "Epic Armory",
-  "entity.epicarmory.maskedguard":"Masked Guard"
+
+  "entity.epicarmory.maskedguard":"Masked Guard",
+  "entity.epicarmory.kenshi":"Kenshi",
+  "item.epicarmory.maskedguard_spawn_egg":"Masked Guard Spawn Egg"
 }

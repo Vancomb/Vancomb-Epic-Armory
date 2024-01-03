@@ -29,4 +29,5 @@ public abstract class AbstractKombatantEntity extends Monster {
     public ResourceLocation getResourceLoaction() {
         return new ResourceLocation(EpicArmory.MOD_ID, "textures/entities/whatever_your_texture_is.png");
     }
+
 }

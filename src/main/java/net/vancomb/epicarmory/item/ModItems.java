@@ -1,16 +1,24 @@
 package net.vancomb.epicarmory.item;
 
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.vancomb.epicarmory.EpicArmory;
+import net.vancomb.epicarmory.entity.ModEntityTypes;
 
 public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, EpicArmory.MOD_ID);
+
+                                          //KOMBATANTS
+
+    public static final RegistryObject<Item> MASKEDGUARD_SPAWN_EGG = ITEMS.register("maskedguard_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.MASKEDGUARD, -1, -1,
+                    new Item.Properties().tab(ModTabs.EPIC_ARMORY)));
 
                                             //MODELS
 

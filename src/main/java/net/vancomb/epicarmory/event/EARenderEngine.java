@@ -33,5 +33,7 @@ public class EARenderEngine {
     @SubscribeEvent
     public static void register(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ModEntityTypes.MASKEDGUARD.get(), AbstractKombatantEntityRenderer::new);
+        event.registerEntityRenderer(ModEntityTypes.KENSHI.get(), AbstractKombatantEntityRenderer::new);
     }
+
 }

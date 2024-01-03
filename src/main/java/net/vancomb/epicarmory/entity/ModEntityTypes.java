@@ -17,10 +17,26 @@ public class ModEntityTypes {
     public static final RegistryObject<EntityType<MaskedGuard>> MASKEDGUARD =
             ENTITY_TYPES.register("maskedguard",
                     () -> EntityType.Builder.of(MaskedGuard::new, MobCategory.MONSTER)
-                            .sized(0.4f, 1.5f)
+                            .sized(0.6f, 1.9f)
                             .build(new ResourceLocation(EpicArmory.MOD_ID, "maskedguard").toString()));
+
+    public static final RegistryObject<EntityType<Kenshi>> KENSHI =
+            ENTITY_TYPES.register("kenshi",
+                    () -> EntityType.Builder.of(Kenshi::new, MobCategory.MONSTER)
+                            .sized(0.6f, 1.9f)
+                            .build(new ResourceLocation(EpicArmory.MOD_ID, "kenshi").toString()));
 
     public static void register(IEventBus modEventBus) {
         ENTITY_TYPES.register(modEventBus);
     }
 }
+
+/*
+
+    public static final RegistryObject<EntityType<Kenshi>> KENSHI =
+            ENTITY_TYPES.register("kenshi",
+                    () -> EntityType.Builder.of(Kenshi::new, MobCategory.MONSTER)
+                            .sized(0.4f, 1.5f)
+                            .build(new ResourceLocation(EpicArmory.MOD_ID, "kenshi").toString()));
+
+ */
