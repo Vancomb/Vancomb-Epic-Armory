@@ -1,6 +1,8 @@
 package net.vancomb.epicarmory.entity;
 
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.Level;
@@ -18,10 +20,3 @@ public class Kenshi extends AbstractKombatantEntity {
     }
 
 }
-
-/*
-
-Kenshi will by default use `SentoItem`
-I need to make a custom datapack for him
-
- */

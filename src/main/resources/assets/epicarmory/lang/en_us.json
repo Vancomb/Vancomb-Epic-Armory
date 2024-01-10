@@ -1,12 +1,54 @@
 {
-  "item.epicarmory.staff": "Staff",
-  "item.epicarmory.hooksword": "Hooksword",
+  "itemGroup.epic_armory": "Epic Armory",
+
+  "item.epicarmory.kombat_koin":"Kombat Koin",
+  "item.epicarmory.earthrealm_kamidogu":"Earthrealm Kamidogu",
+  "item.epicarmory.netherrealm_kamidogu":"Netherrealm Kamidogu",
+  "item.epicarmory.outworld_kamidogu":"Outworld Kamidogu",
+
   "item.epicarmory.sento": "Sento",
   "item.epicarmory.sento_sheath": "Sento Sheath",
   "item.epicarmory.sento.tooltip": "An ancient relic belonging to the Takahashi clan, a powerful tribe of warriors that have mysteriously ceased to exist. \nIt is believed that the souls of past wielders are imbued in this sword",
-  "itemGroup.epic_armory": "Epic Armory",
+
+  "item.epicarmory.staff": "Staff",
+  "item.epicarmory.hooksword": "Hooksword",
+  "item.epicarmory.naginata":"Naginata",
+
+  "entity.epicarmory.raiden":"Raiden",
+  "entity.epicarmory.liukang":"Liu Kang",
+  "entity.epicarmory.kunglao":"Kung Lao",
+  "entity.epicarmory.johnnycage":"Johnny Cage",
+  "entity.epicarmory.sonya":"Sonya",
+  "entity.epicarmory.jax":"Jax",
+  "entity.epicarmory.kenshi":"Kenshi",
+  "entity.epicarmory.kabal":"Kabal",
+  "entity.epicarmory.kano":"Kano",
+
+  "entity.epicarmory.scorpion":"Scorpion",
+  "entity.epicarmory.subzero":"Sub-Zero",
+  "entity.epicarmory.reptile":"Reptile",
+  "entity.epicarmory.smoke":"Smoke",
+  "entity.epicarmory.noobsaibot":"Noob-Saibot",
+
+  "entity.epicarmory.quanchi":"Quan Chi",
+  "entity.epicarmory.shinnok":"Shinnok",
+
+  "entity.epicarmory.ermac":"Ermac",
+  "entity.epicarmory.baraka":"Baraka",
+  "entity.epicarmory.kitana":"Kitana",
+  "entity.epicarmory.mileena":"Mileena",
+  "entity.epicarmory.jade":"Jade",
+  "entity.epicarmory.shangtsung":"Shang Tsung",
+  "entity.epicarmory.shaokahn":"Shao Kahn",
 
   "entity.epicarmory.maskedguard":"Masked Guard",
-  "entity.epicarmory.kenshi":"Kenshi",
+  "entity.epicarmory.linkueiassassin":"Lin-Kuei Assassin",
+  "entity.epicarmory.linkueiarcher":"Lin-Kuei Archer",
+  "entity.epicarmory.blackdragonthug":"Black Dragon Thug",
+  "entity.epicarmory.blackdragonmercanary":"Black Dragon Mercenary",
+
+  "entity.epicarmory.tarkatan":"Tarkatan",
+  "entity.epicarmory.umgadipriestess":"Umgadi Priestess",
+
   "item.epicarmory.maskedguard_spawn_egg":"Masked Guard Spawn Egg"
 }
