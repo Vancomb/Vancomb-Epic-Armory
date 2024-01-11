@@ -7,6 +7,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.vancomb.epicarmory.EpicArmory;
 import net.vancomb.epicarmory.client.EAModelLayers;
+import net.vancomb.epicarmory.entity.AbstractKombatantEntity;
 import net.vancomb.epicarmory.entity.ModEntityTypes;
 import net.vancomb.epicarmory.client.model.AbstractKombatantEntityModel;
 import net.vancomb.epicarmory.client.render.AbstractKombatantEntityRenderer;
@@ -50,5 +51,4 @@ public class EARenderEngine {
  */
 
     }
-
 }

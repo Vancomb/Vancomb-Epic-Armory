@@ -28,16 +28,16 @@ public class AbstractKombatantEntityRenderer extends HumanoidMobRenderer<Abstrac
     }
 
     private void setModelProperties(AbstractKombatantEntity kombatant) {
-        AbstractKombatantEntityModel<AbstractKombatantEntity> companionModel = this.getModel();
+        AbstractKombatantEntityModel<AbstractKombatantEntity> AbstractKombatantEntityModel = this.getModel();
         HumanoidModel.ArmPose humanoidmodel$armpose = getArmPose(kombatant, InteractionHand.MAIN_HAND);
         HumanoidModel.ArmPose humanoidmodel$armpose1 = getArmPose(kombatant, InteractionHand.OFF_HAND);
 
         if (kombatant.getMainArm() == HumanoidArm.RIGHT) {
-            companionModel.rightArmPose = humanoidmodel$armpose;
-            companionModel.leftArmPose = humanoidmodel$armpose1;
+            AbstractKombatantEntityModel.rightArmPose = humanoidmodel$armpose;
+            AbstractKombatantEntityModel.leftArmPose = humanoidmodel$armpose1;
         } else {
-            companionModel.rightArmPose = humanoidmodel$armpose1;
-            companionModel.leftArmPose = humanoidmodel$armpose;
+            AbstractKombatantEntityModel.rightArmPose = humanoidmodel$armpose1;
+            AbstractKombatantEntityModel.leftArmPose = humanoidmodel$armpose;
         }
     }
 
