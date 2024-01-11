@@ -26,8 +26,8 @@ but will have different skins, use different weapons, have different attributes,
 //To make a new mob that works with the Renderer you'd need to make sure it extends this class
 
 public abstract class AbstractKombatantEntity extends Monster {
-    public AbstractKombatantEntity(EntityType<? extends Monster> p_33002_, Level p_33003_) {
-        super(p_33002_, p_33003_);
+    public AbstractKombatantEntity(EntityType<? extends Monster> entityType, Level level) {
+        super(entityType, level);
     }
 
     public static AttributeSupplier setAttributes() {
@@ -54,9 +54,15 @@ public abstract class AbstractKombatantEntity extends Monster {
         return new ResourceLocation(EpicArmory.MOD_ID, "textures/entities/whatever_your_texture_is.png");
     }
 
-    protected void populateDefaultEquipmentSlots(RandomSource p_218949_, DifficultyInstance p_218950_) {
+    protected void populateDefaultEquipmentSlots(RandomSource pRandom, DifficultyInstance pDifficulty) {
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.IRON_SWORD));
-
     }
+
 }
 
+
+/*
+    protected void populateDefaultEquipmentSlots(RandomSource pRandom, DifficultyInstance pDifficulty) {
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.IRON_SWORD));
+
+ */

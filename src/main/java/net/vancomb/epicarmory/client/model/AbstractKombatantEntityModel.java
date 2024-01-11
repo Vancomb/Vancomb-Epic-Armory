@@ -15,5 +15,6 @@ public class AbstractKombatantEntityModel<T extends AbstractKombatantEntity> ext
     public static LayerDefinition createBodyLayer() {
         MeshDefinition meshdefinition = HumanoidModel.createMesh(CubeDeformation.NONE, 0.0F);
         return LayerDefinition.create(meshdefinition, 64, 32);
+
     }
 }

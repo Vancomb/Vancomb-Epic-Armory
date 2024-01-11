@@ -41,22 +41,22 @@ public class AbstractKombatantEntityRenderer extends HumanoidMobRenderer<Abstrac
         }
     }
 
-    private static HumanoidModel.ArmPose getArmPose(AbstractKombatantEntity companion, InteractionHand hand) {
-        ItemStack itemstack = companion.getItemInHand(hand);
+    private static HumanoidModel.ArmPose getArmPose(AbstractKombatantEntity kombatant, InteractionHand hand) {
+        ItemStack itemstack = kombatant.getItemInHand(hand);
         if (itemstack.isEmpty()) {
             return HumanoidModel.ArmPose.EMPTY;
         } else {
-            if (companion.getUsedItemHand() == hand && companion.getUseItemRemainingTicks() > 0) {
+            if (kombatant.getUsedItemHand() == hand && kombatant.getUseItemRemainingTicks() > 0) {
                 UseAnim useanim = itemstack.getUseAnimation();
 
                 if (useanim == UseAnim.BOW) {
                     return HumanoidModel.ArmPose.BOW_AND_ARROW;
                 }
 
-                if (useanim == UseAnim.CROSSBOW && hand == companion.getUsedItemHand()) {
+                if (useanim == UseAnim.CROSSBOW && hand == kombatant.getUsedItemHand()) {
                     return HumanoidModel.ArmPose.CROSSBOW_CHARGE;
                 }
-            } else if (!companion.swinging && itemstack.is(Items.CROSSBOW) && CrossbowItem.isCharged(itemstack)) {
+            } else if (!kombatant.swinging && itemstack.is(Items.CROSSBOW) && CrossbowItem.isCharged(itemstack)) {
                 return HumanoidModel.ArmPose.CROSSBOW_HOLD;
             }
 
@@ -65,4 +65,6 @@ public class AbstractKombatantEntityRenderer extends HumanoidMobRenderer<Abstrac
     }
 }
 
+/*
 
+ */
