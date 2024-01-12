@@ -1,10 +1,7 @@
 package net.vancomb.epicarmory.entity;
 
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.util.RandomSource;
-import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
@@ -15,8 +12,6 @@ import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.vancomb.epicarmory.EpicArmory;
 
@@ -26,6 +21,7 @@ but will have different skins, use different weapons, have different attributes,
 //To make a new mob that works with the Renderer you'd need to make sure it extends this class
 
 public abstract class AbstractKombatantEntity extends Monster {
+
     public AbstractKombatantEntity(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
     }
@@ -53,16 +49,11 @@ public abstract class AbstractKombatantEntity extends Monster {
     public ResourceLocation getResourceLoaction() {
         return new ResourceLocation(EpicArmory.MOD_ID, "textures/entities/whatever_your_texture_is.png");
     }
-
-    protected void populateDefaultEquipmentSlots(RandomSource pRandom, DifficultyInstance pDifficulty) {
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.IRON_SWORD));
-    }
-
 }
-
 
 /*
     protected void populateDefaultEquipmentSlots(RandomSource pRandom, DifficultyInstance pDifficulty) {
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.IRON_SWORD));
 
+    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.NAGINATA.get())); (this worked)
  */

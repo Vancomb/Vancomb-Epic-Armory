@@ -26,8 +26,11 @@ public class AbstractKombatantEntityRenderer extends HumanoidMobRenderer<Abstrac
     public ResourceLocation getTextureLocation(AbstractKombatantEntity entity) {
         return entity.getResourceLoaction();
     }
+}
 
-    private void setModelProperties(AbstractKombatantEntity kombatant) {
+
+/*
+ private void setModelProperties(AbstractKombatantEntity kombatant) {
         AbstractKombatantEntityModel<AbstractKombatantEntity> AbstractKombatantEntityModel = this.getModel();
         HumanoidModel.ArmPose humanoidmodel$armpose = getArmPose(kombatant, InteractionHand.MAIN_HAND);
         HumanoidModel.ArmPose humanoidmodel$armpose1 = getArmPose(kombatant, InteractionHand.OFF_HAND);
@@ -62,9 +65,4 @@ public class AbstractKombatantEntityRenderer extends HumanoidMobRenderer<Abstrac
 
             return HumanoidModel.ArmPose.ITEM;
         }
-    }
-}
-
-/*
-
  */
