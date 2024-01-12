@@ -35,8 +35,8 @@ public class SentoItem extends WeaponItem {
         this.attackSpeed = -1.8F;
         if (EpicFightMod.isPhysicalClient()) {
             this.tooltipExpand = new ArrayList<>();
-            this.tooltipExpand.add(Component.m_237113_(""));
-            this.tooltipExpand.add(Component.m_237115_("item." + EpicArmory.MOD_ID + ".sento.tooltip"));
+            this.tooltipExpand.add(Component.literal(""));
+            this.tooltipExpand.add(Component.translatable("item." + EpicArmory.MOD_ID + ".sento.tooltip"));
         }
     }
 

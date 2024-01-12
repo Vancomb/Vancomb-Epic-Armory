@@ -1,17 +1,23 @@
 package net.vancomb.epicarmory.entity;
 
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.util.RandomSource;
-import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.vancomb.epicarmory.EpicArmory;
+import net.vancomb.epicarmory.item.ModItems;
 
 
 public class Kenshi extends AbstractKombatantEntity {
 
-    public Kenshi(EntityType<? extends Monster> p_33002_, Level p_33003_) { super(p_33002_, p_33003_);}
+    public Kenshi(EntityType<? extends Monster> entityType, Level level) {
+        super(entityType, level);
+
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ModItems.SENTO.get()));
+
+    }
 
     @Override
     public ResourceLocation getResourceLoaction() {

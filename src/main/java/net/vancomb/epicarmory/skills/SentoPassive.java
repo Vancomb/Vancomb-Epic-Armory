@@ -78,7 +78,7 @@ public class SentoPassive extends PassiveSkill {
 
                 if (flag) {
                     ((ServerPlayerPatch)executer).modifyLivingMotionByCurrentItem();
-                    SPPlayAnimation msg3 = new SPPlayAnimation(WOMAnimations.KATANA_SHEATHE, serverPlayer.m_19879_(), 0.0F);
+                    SPPlayAnimation msg3 = new SPPlayAnimation(WOMAnimations.KATANA_SHEATHE, serverPlayer.getId(), 0.0F);
                     EpicFightNetworkManager.sendToAllPlayerTrackingThisEntityWithSelf(msg3, serverPlayer);
                 }
             } else {

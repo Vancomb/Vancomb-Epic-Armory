@@ -25,11 +25,9 @@ public class MaskedGuard extends AbstractKombatantEntity {
         public void spawnEntityWithRandomWeapon(){
             Item[] weaponOptions = {
                     ModItems.NAGINATA.get(),
-                    EpicFightItems.IRON_SPEAR.get(),
-                    EpicFightItems.IRON_TACHI.get(),
-                    EpicFightItems.UCHIGATANA.get(),
-                    //IF use EFM, can also spawn with SPEAR + TACHI
-                    //IF use WOM, can also spawn with STAFF
+                    EpicFightItems.IRON_SPEAR.get(), //IF use EFM
+                    EpicFightItems.IRON_TACHI.get(), //IF use EFM
+
             };
 
             int randomIndex = this.random.nextInt(weaponOptions.length);
