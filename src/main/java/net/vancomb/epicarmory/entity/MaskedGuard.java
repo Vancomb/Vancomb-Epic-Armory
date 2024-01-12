@@ -22,6 +22,7 @@ public class MaskedGuard extends AbstractKombatantEntity {
     }
         //This method gives the Masked Guard a chance to spawn with a variety of weapons.
         // Ideally, it will work based off Mod Compat.
+
         public void spawnEntityWithRandomWeapon(){
             Item[] weaponOptions = {
                     ModItems.NAGINATA.get(),
@@ -41,5 +42,10 @@ public class MaskedGuard extends AbstractKombatantEntity {
 
 }
 
-// this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ModItems.NAGINATA.get()));
-//int randomIndex = this.random.nextInt(0, weaponOptions.length);
+/*
+
+    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ModItems.NAGINATA.get()));
+
+    int randomIndex = this.random.nextInt(0, weaponOptions.length);
+
+ */
