@@ -8,8 +8,8 @@ import net.minecraft.client.model.geom.builders.MeshDefinition;
 import net.vancomb.epicarmory.entity.AbstractKombatantEntity;
 
 public class AbstractKombatantEntityModel<T extends AbstractKombatantEntity> extends HumanoidModel<T>  {
-    public AbstractKombatantEntityModel(ModelPart p_170677_) {
-        super(p_170677_);
+    public AbstractKombatantEntityModel(ModelPart modelPart) {
+        super(modelPart);
     }
 
     public static LayerDefinition createBodyLayer() {

@@ -1,16 +1,8 @@
 package net.vancomb.epicarmory.client.render;
 
-import net.minecraft.client.model.HumanoidModel;
-import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.HumanoidMobRenderer;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.entity.HumanoidArm;
-import net.minecraft.world.item.CrossbowItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.UseAnim;
 import net.vancomb.epicarmory.entity.AbstractKombatantEntity;
 import net.vancomb.epicarmory.client.EAModelLayers;
 import net.vancomb.epicarmory.client.model.AbstractKombatantEntityModel;
@@ -24,7 +16,7 @@ public class AbstractKombatantEntityRenderer extends HumanoidMobRenderer<Abstrac
 
     @Override
     public ResourceLocation getTextureLocation(AbstractKombatantEntity entity) {
-        return entity.getResourceLoaction();
+        return entity.getResourceLocation();
     }
 }
 

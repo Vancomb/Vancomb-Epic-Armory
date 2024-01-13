@@ -14,9 +14,10 @@ public class CommonEvents {
     @SubscribeEvent
     public static void onAttributeCreate(EntityAttributeCreationEvent event) {
         event.put(ModEntityTypes.MASKEDGUARD.get(), MaskedGuard.setAttributes());
-        event.put(ModEntityTypes.KENSHI.get(), Kenshi.setAttributes());
+        event.put(ModEntityTypes.KENSHI.get(), Kenshi.setAttributes()); //This is where the error occurs when I try to override the method.
 
         /*
+
         event.put(ModEntityTypes.LIUKANG.get(), LiuKang.setAttributes());
         event.put(ModEntityTypes.KUNGLAO.get(), KungLao.setAttributes());
         event.put(ModEntityTypes.KANO.get(), Kano.setAttributes());
