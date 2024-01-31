@@ -16,9 +16,12 @@ import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.fml.ModList;
 import net.vancomb.epicarmory.EpicArmory;
 import net.vancomb.epicarmory.item.ModItems;
+import reascer.wom.world.item.WOMItems;
 import yesman.epicfight.world.item.EpicFightItems;
 
 
@@ -26,9 +29,16 @@ public class MaskedGuard extends AbstractKombatantEntity {
 
     public MaskedGuard(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);      //CONSTRUCTOR
-
-
-        spawnEntityWithRandomWeapon(); //CALLING THE METHOD
+        //spawnEntityWithRandomWeapon(); //CALLING THE METHOD
+        if(isEpicFightActive() && isWoMActive()) { //Checks if both mods are loaded
+            spawnEntityWithAllWeapon();
+        } else if(isWoMActive() && !isEpicFightActive()) { //Checks if wom is active and epic fight is not
+            spawnEntityWithWomWeapon();
+        } else if(isEpicFightActive() && !isWoMActive()) { //Checks if epic fight is active and wom is not
+            spawnEntityWithEFWeapon();
+        } else if(!isEpicFightActive() && !isWoMActive()) { //Checks if neither are active
+            spawnEntityWithVanillaWeapon();
+        }
     }
 
     //SKIN
@@ -47,7 +57,7 @@ public class MaskedGuard extends AbstractKombatantEntity {
     }
 
     //THIS METHOD GIVES MASKED GUARD SPAWN WITH A VARIETY OF WEAPONS, IDEALLY IT WILL WORK BASED OFF MOD COMPAT
-        public void spawnEntityWithRandomWeapon(){
+        /*public void spawnEntityWithRandomWeapon() {
             Item[] weaponOptions = {
                     ModItems.NAGINATA.get(),
                     EpicFightItems.IRON_SPEAR.get(), //If using EFM
@@ -57,6 +67,44 @@ public class MaskedGuard extends AbstractKombatantEntity {
 
             int randomIndex = this.random.nextInt(weaponOptions.length);
             this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(weaponOptions[randomIndex]));
+    }*/
+
+    public void spawnEntityWithWomWeapon() {
+        Item[] weaponOptions = {
+                WOMItems.WOODEN_STAFF.get(),
+        };
+
+        int randomIndex = this.random.nextInt(weaponOptions.length);
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(weaponOptions[randomIndex]));
+    }
+
+    public void spawnEntityWithAllWeapon() {
+        Item[] weaponOptions = {
+                WOMItems.WOODEN_STAFF.get(),
+                EpicFightItems.IRON_SPEAR.get(),
+                Items.IRON_SWORD,
+        };
+
+        int randomIndex = this.random.nextInt(weaponOptions.length);
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(weaponOptions[randomIndex]));
+    }
+
+    public void spawnEntityWithEFWeapon() {
+        Item[] weaponOptions = {
+                EpicFightItems.IRON_SPEAR.get(),
+        };
+
+        int randomIndex = this.random.nextInt(weaponOptions.length);
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(weaponOptions[randomIndex]));
+    }
+
+    public void spawnEntityWithVanillaWeapon() {
+        Item[] weaponOptions = {
+                Items.IRON_SWORD,
+        };
+
+        int randomIndex = this.random.nextInt(weaponOptions.length);
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(weaponOptions[randomIndex]));
     }
 
     //GOALS FOR MASKED GUARD
