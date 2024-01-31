@@ -15,9 +15,9 @@ public class CommonEvents {
     public static void onAttributeCreate(EntityAttributeCreationEvent event) {
         event.put(ModEntityTypes.MASKEDGUARD.get(), MaskedGuard.setAttributes());
         event.put(ModEntityTypes.KENSHI.get(), Kenshi.setAttributes()); //This is where the error occurs when I try to override the method.
+        event.put(ModEntityTypes.SUBZERO.get(), SubZero.setAttributes());
 
         /*
-
         event.put(ModEntityTypes.LIUKANG.get(), LiuKang.setAttributes());
         event.put(ModEntityTypes.KUNGLAO.get(), KungLao.setAttributes());
         event.put(ModEntityTypes.KANO.get(), Kano.setAttributes());
@@ -25,9 +25,7 @@ public class CommonEvents {
         event.put(ModEntityTypes.JOHNNYCAGE.get(), JohnnyCage.setAttributes());
         event.put(ModEntityTypes.JAX.get(), Jax.setAttributes());
         event.put(ModEntityTypes.RAIDEN.get(), Raiden.setAttributes());
-        event.put(ModEntityTypes.SUBZERO.get(), SubZero.setAttributes());
         event.put(ModEntityTypes.SCORPION.get(), Scorpion.setAttributes());
-
          */
 
     }

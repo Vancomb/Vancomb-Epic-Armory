@@ -34,7 +34,7 @@ public class EARenderEngine {
     public static void register(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ModEntityTypes.MASKEDGUARD.get(), AbstractKombatantEntityRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.KENSHI.get(), AbstractKombatantEntityRenderer::new);
-
+        event.registerEntityRenderer(ModEntityTypes.SUBZERO.get(), AbstractKombatantEntityRenderer::new);
 /*
         event.registerEntityRenderer(ModEntityTypes.LIUKANG.get(), AbstractKombatantEntityRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.KUNGLAO.get(), AbstractKombatantEntityRenderer::new);
@@ -43,7 +43,6 @@ public class EARenderEngine {
         event.registerEntityRenderer(ModEntityTypes.JOHNNYCAGE.get(), AbstractKombatantEntityRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.JAX.get(), AbstractKombatantEntityRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.RAIDEN.get(), AbstractKombatantEntityRenderer::new);
-        event.registerEntityRenderer(ModEntityTypes.SUBZERO.get(), AbstractKombatantEntityRenderer::new);
         event.registerEntityRenderer(ModEntityTypes.SCORPION.get(), AbstractKombatantEntityRenderer::new);
 
 

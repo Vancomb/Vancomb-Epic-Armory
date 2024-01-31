@@ -21,7 +21,11 @@ public class AbstractKombatantEntityRenderer extends HumanoidMobRenderer<Abstrac
 }
 
 
+
 /*
+
+SEEMS LIKE NONE OF THIS WAS NECESSARY, APPARENTLY THE HUMANOID RENDERER SHOULD ALREADY BE DOING THIS.
+
  private void setModelProperties(AbstractKombatantEntity kombatant) {
         AbstractKombatantEntityModel<AbstractKombatantEntity> AbstractKombatantEntityModel = this.getModel();
         HumanoidModel.ArmPose humanoidmodel$armpose = getArmPose(kombatant, InteractionHand.MAIN_HAND);

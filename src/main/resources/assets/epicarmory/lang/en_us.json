@@ -1,5 +1,6 @@
 {
   "itemGroup.epic_armory": "Epic Armory",
+  "itemGroup.kombatants":"Kombatants",
 
   "item.epicarmory.kombat_koin":"Kombat Koin",
   "item.epicarmory.earthrealm_kamidogu":"Earthrealm Kamidogu",
@@ -50,5 +51,6 @@
   "entity.epicarmory.tarkatan":"Tarkatan",
   "entity.epicarmory.umgadipriestess":"Umgadi Priestess",
 
-  "item.epicarmory.maskedguard_spawn_egg":"Masked Guard Spawn Egg"
+  "item.epicarmory.maskedguard_spawn_egg":"Masked Guard Spawn Egg",
+  "item.epicarmory.kenshi_spawn_egg":"Kenshi Spawn Egg"
 }

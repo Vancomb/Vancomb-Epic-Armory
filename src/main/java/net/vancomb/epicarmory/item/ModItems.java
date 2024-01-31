@@ -8,6 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.vancomb.epicarmory.EpicArmory;
 import net.vancomb.epicarmory.entity.ModEntityTypes;
+import yesman.epicfight.world.item.WeaponItem;
 
 public class ModItems {
 
@@ -52,13 +53,20 @@ public class ModItems {
             () -> new SwordItem(Tiers.IRON, 11, -2.85f,
                     new Item.Properties().tab(ModTabs.EPIC_ARMORY)));
 
+    //ADDON WEAPONS
+
+    public static final RegistryObject<Item> SHAOLIN_KOIN = ITEMS.register("shaolin_koin",
+            () -> new ShaolinKoinItem(new Item.Properties().tab(ModTabs.EPIC_ARMORY).rarity(Rarity.RARE)));
 
     //KOMBATANT SPAWN EGGS
 
     public static final RegistryObject<Item> MASKEDGUARD_SPAWN_EGG = ITEMS.register("maskedguard_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.MASKEDGUARD, -1, -1,
-                    new Item.Properties().tab(ModTabs.EPIC_ARMORY)));
+                    new Item.Properties().tab(ModTabs.KOMBATANTS)));
 
+    public static final RegistryObject<Item> KENSHI_SPAWN_EGG = ITEMS.register("kenshi_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.KENSHI, -1, -1,
+                    new Item.Properties().tab(ModTabs.KOMBATANTS)));
 
 
 

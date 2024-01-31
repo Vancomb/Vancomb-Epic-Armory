@@ -27,6 +27,12 @@ public class ModEntityTypes {
                             .sized(0.6f, 1.9f)
                             .build(new ResourceLocation(EpicArmory.MOD_ID, "kenshi").toString()));
 
+    public static final RegistryObject<EntityType<SubZero>> SUBZERO =
+            ENTITY_TYPES.register("subzero",
+                    () -> EntityType.Builder.of(SubZero::new, MobCategory.MONSTER)
+                            .sized(0.6f, 1.9f)
+                            .build(new ResourceLocation(EpicArmory.MOD_ID, "subzero").toString()));
+
     /*
 
     public static final RegistryObject<EntityType<LiuKang>> LIUKANG =

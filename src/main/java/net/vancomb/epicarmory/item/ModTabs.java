@@ -8,5 +8,13 @@ public class ModTabs {
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.KOMBAT_KOIN.get());
         }
+
+    };
+
+    public static final CreativeModeTab KOMBATANTS = new CreativeModeTab("kombatants") {
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.MASKEDGUARD_SPAWN_EGG.get());
+        }
+
     };
 }
